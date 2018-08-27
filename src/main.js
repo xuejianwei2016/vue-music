@@ -10,7 +10,16 @@ fastclick.attach(document.body)
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 Vue.use(MintUI)
+import { Lazyload } from 'mint-ui'; 
+Vue.use(Lazyload);
+import { Picker } from 'mint-ui';
+Vue.component(Picker.name, Picker);
+import { DatetimePicker } from 'mint-ui';
+Vue.component(DatetimePicker.name, DatetimePicker);
+import { Tabbar, TabItem } from 'mint-ui';
 
+Vue.component(Tabbar.name, Tabbar);
+Vue.component(TabItem.name, TabItem);
 
 Vue.config.productionTip = false
 
